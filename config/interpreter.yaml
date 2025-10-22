@@ -1,5 +1,4 @@
-
-model: ollama/nous-hermes2-mixtral:8x7b-dpo-q4_K_M
+model: ollama/llama3.2:3b
 
 auto_run: true  # Ejecutar código automáticamente sin pedir confirmación
 safe_mode: off  # Desactivar modo seguro
@@ -7,15 +6,11 @@ offline: true   # Usar solo modelo local
 
 temperature: 0.7
 max_tokens: 8192
-context_window: 8192
 
 os: true        # Permitir comandos del SO
-browser: false  # Desactivado por defecto (usaremos Playwright separado)
 
 verbose: true
 debug: false
-
-api_base: http://localhost:11434
 
 custom_instructions: |
   Eres un agente AI autónomo con acceso TOTAL al sistema Linux.
